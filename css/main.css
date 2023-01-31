@@ -74,6 +74,27 @@ button {
 }
 
 /* =========================HEADER==================================== */
+.page-header {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: #e7e9fc;
+}
+
+.page-header-container {
+  display: flex;
+  align-items: center;
+}
+
+.page-nav {
+  display: flex;
+}
+
+.menu-list {
+  display: flex;
+}
+
 .logo {
   font-family: var(--secondary-font);
   font-weight: 800;
@@ -82,6 +103,7 @@ button {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--title-color-theme-light);
+  margin-right: 76px;
 }
 
 .box-logo {
@@ -92,6 +114,10 @@ button {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--text-button-color-dark);
+}
+
+.menu-item:not(:last-child) {
+  margin-right: 40px;
 }
 
 .menu-link {
@@ -110,6 +136,18 @@ button {
 
 .contact {
   font-style: normal;
+}
+
+.contact-list {
+  display: flex;
+}
+
+.contact-item:not(:last-child) {
+  margin-right: 40px;
+}
+
+.contact-content {
+  margin-left: auto;
 }
 
 .contact-gmail,
@@ -135,6 +173,7 @@ button {
   background-color: var(--title-color-theme-light);
   padding-top: 188px;
   padding-bottom: 188px;
+  text-align: center;
 }
 
 .hero-title {
@@ -153,6 +192,10 @@ button {
   letter-spacing: 0.04em;
   color: var(--title-color-theme-dark);
   background-color: var(--text-button-color-dark);
+
+  padding: 16px 32px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
 }
 
 .modal-btn:hover,
@@ -164,6 +207,7 @@ button {
 
 /* =========================MAIN==================================== */
 
+/* =========================GENERAL==================================== */
 .subtitle {
   font-weight: 500;
   font-size: 20px;
@@ -178,6 +222,18 @@ button {
   letter-spacing: 0.02em;
   color: var(--text-color-theme-light);
 }
+
+.headline {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: var(--title-color-theme-light);
+}
+
+/* =========================/GENERAL==================================== */
 
 /* =========================/MAIN==================================== */
 
@@ -201,16 +257,6 @@ button {
 
 .doing {
   padding-bottom: 120px;
-}
-
-.headline {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.11;
-  text-align: center;
-  letter-spacing: 0.02em;
-  text-transform: capitalize;
-  color: var(--title-color-theme-light);
 }
 
 .doing-headline {
@@ -261,7 +307,12 @@ button {
 .team-content {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
+  padding: 32px 16px;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  border-radius: 0px 0px 4px 4px;
 }
 /* =========================/OUR_TEAM==================================== */
 
@@ -274,6 +325,7 @@ button {
 .filter-list {
   margin-bottom: 72px;
   display: flex;
+  justify-content: center;
 }
 
 .filter-item:not(:last-child) {
@@ -313,14 +365,18 @@ button {
 .works-item {
   margin-left: 24px;
   margin-top: 48px;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: #e7e9fc;
 }
 
 .works-subtitle {
   margin-bottom: 8px;
 }
 
-.card-content
-p
+.card-content {
+  padding: 32px 54px 32px 16px;
+}
 
 /* =========================/PORTFOLIO==================================== */
 
@@ -332,10 +388,10 @@ p
   padding-bottom: 100px;
 }
 
-.footer-content {
+/* .footer-content {
   width: 264px;
-  margin-left: 156px;
-}
+  margin: 0;
+} */
 
 .footer-logo {
   font-family: var(--secondary-font);
@@ -353,6 +409,7 @@ p
   letter-spacing: 0.02em;
   color: var(--text-color-theme-dark);
   margin-top: 16px;
+  width: 264px;
 }
 
 /* =========================/FOOTER==================================== */
